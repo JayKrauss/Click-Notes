@@ -11,7 +11,7 @@ app.use(cors());
 const router = express.Router();
 
 // this is our MongoDB database
-const dbRoute = "mongodb://admin:Trilogy2019@cluster0-9twgc.mongodb.net/test?retryWrites=true";
+const dbRoute = "mongodb+srv://admin:Trilogy2019@cluster0-9twgc.mongodb.net/test?retryWrites=true";
 
 // connects our back end code with the database
 mongoose.connect(
@@ -21,7 +21,7 @@ mongoose.connect(
 
 let db = mongoose.connection;
 
-db.once("open", () => console.log("connected to the Formbase"));
+db.once("open", () => console.log("connected to the database"));
 
 // checks if connection with the database is successful
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
