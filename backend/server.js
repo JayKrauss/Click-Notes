@@ -10,10 +10,10 @@ const app = express();
 app.use(cors());
 const router = express.Router();
 
-// this is our MongoDB database
+//route for the database- note that it contains our DB password, so it is not secure.
 const dbRoute = "mongodb+srv://admin:Trilogy2019@cluster0-9twgc.mongodb.net/test?retryWrites=true";
 
-// connects our back end code with the database
+//connects to the database
 mongoose.connect(
   dbRoute,
   { useNewUrlParser: true }
@@ -23,13 +23,13 @@ let db = mongoose.connection;
 
 db.once("open", () => console.log("connected to the database"));
 
-// checks if connection with the database is successful
+//checks if connection with the database is successful
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(logger("dev"));
 
-// Get method to fetch
+//:get method to fetch
 router.get("/getForm", (req, res) => {
   Form.find((err, Form) => {
     if (err) return res.json({ success: false, error: err });
@@ -37,7 +37,7 @@ router.get("/getForm", (req, res) => {
   });
 });
 
-//update method to change
+//:update method to change
 router.post("/updateForm", (req, res) => {
   const { id, update } = req.body;
   Form.findOneAndUpdate(id, update, err => {
@@ -46,7 +46,7 @@ router.post("/updateForm", (req, res) => {
   });
 });
 
-// delete method to remove
+//:delete method to remove
 router.delete("/deleteForm", (req, res) => {
   const { id } = req.body;
   Form.findOneAndDelete(id, err => {
@@ -55,7 +55,7 @@ router.delete("/deleteForm", (req, res) => {
   });
 });
 
-// post method to create
+//:post method to create
 router.post("/postForm", (req, res) => {
   let Form = new Form();
 
@@ -75,7 +75,7 @@ router.post("/postForm", (req, res) => {
   });
 });
 
-// append /api for our http requests
+//append /api for our http requests
 app.use("/api", router);
 
 app.listen(API_PORT, () => console.log(`LISTENING ON PORT ${API_PORT}`));
