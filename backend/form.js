@@ -1,15 +1,16 @@
-// /backend/Form.js
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-// this will be our form base's form structure 
+// this will be our database's form structure 
 const formSchema = new Schema(
   {
     id: Number,
-    message: String
+    candidateName: String,
+    candidateSchool: String,
+    candidateProgram: String,
+    candidateScore: Number
   },
   { timestamps: true }
 );
 
-// export the new Schema so we could modify it using Node.js
 module.exports = mongoose.model("Form", formSchema);
