@@ -1,5 +1,5 @@
 # Click It Notes
-[Live Preview (coming soon)](#)
+[Live Preview](http://clicknotes.com.s3-website.us-east-2.amazonaws.com/)
 
 ## OVERVIEW
 Click It Notes brings simplicity and automation to the note taking process during our final TA interviews while supporting consistent and quality reports among all team members. Interviewers will have a clean and simple user interface that allows them to click buttons to take notes of the most common behaviors identified during a final TA exercise. When an interview has finished, users can generate a human readable report showing the outcome of their Click It Notes.
