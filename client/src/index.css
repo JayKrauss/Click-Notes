@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.font-x-small {
+  font-size: small !important;
+}
+
+.font-small {
+  font-size: small !important;
+}
+
+.font-medium {
+  font-size: medium !important;
+}
+
+.font-large {
+  font-size: large !important;
+}
+
+.dropdown.nav-item .nav-sub-item:hover,
+.dropdown.nav-item:hover {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.behavior-button:hover {
+  transform: scale(1.09);
+  transition: ease-in-out;
+}
+
+.behavior-button:active {
+  transform: scale(0.99);
+  box-shadow: none !important;
+}
+
+.error-button {
+  border: thin solid transparent !important;
+}
+
+.error-button:hover {
+  border: thin solid rgba(92, 143, 85, 0.75) !important;
+  transition: ease-in-out;
+}
+
+.pass-button {
+  letter-spacing: 0.3em;
+}
+
+.trait-button {
+  letter-spacing: 0.2em;
+}
+
+.trait-button.btn-outline-light:hover {
+  background-color: transparent !important;
+  color: rgba(255, 255, 255, 0.75);
+  border: thin solid rgb(92, 143, 85);
+  box-shadow: inset 0 0 20px 2px rgb(92, 143, 85);
+}
+
+.substitute-button,
+.fail-button,
+.round-button {
+  letter-spacing: 0.15em;
+}
+
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.report-modal .modal-body {
+  overflow-y: auto;
+  max-height: 75vh;
+}
+
+.report-sub-heading {
+  text-decoration: underline;
+}
+
+.report-section {
+  max-height: 300px;
+}
+
+.report-section-bottom {
+  max-height: 150px;
+}
+
+@media only screen and (max-width: 767px){
+  .outcome-button-group {
+    border: none !important;
+  }
+
+  .flags-section,
+  .errors-section {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 575px){
+  .flags-section,
+  .errors-section {
+    width: 100%;
+  }
+
+  .errors-section {
+    margin: auto 5em;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .app-header .navbar * {
+    font-size: 24px;
+  }
+
+  .errors-section {
+    margin: auto 2em;
+  }
+}
+
+@media only screen and (max-width: 355px){
+  .app-header .navbar * {
+    font-size: 18px;
+  }
+
+  .errors-section {
+    margin: auto 0;
+  }
+}
