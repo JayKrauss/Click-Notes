@@ -5,9 +5,6 @@
   },
   "extends": "eslint:recommended",
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
@@ -20,21 +17,8 @@
       "rules": {
         "no-unused-expressions": "off"
       }
-    },
-    {
-      "files": ["serviceWorker.js"],
-      "env": {
-        "node": true,
-        "serviceworker": true
-      }
     }
   ],
-  "settings": {
-    "react": {
-      "pragma": "React",
-      "version": "detect"
-    }
-  },
   "rules": {
     "accessor-pairs": "error",
     "array-bracket-newline": "off",
@@ -248,7 +232,6 @@
     "quote-props": "off",
     "quotes": ["error", "single"],
     "radix": "error",
-    "react/prop-types": "off",
     "require-atomic-updates": "error",
     "require-await": "error",
     "require-jsdoc": "off",

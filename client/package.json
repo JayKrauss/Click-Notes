@@ -28,6 +28,26 @@
     "plugins": ["react"],
     "rules": {
       "react/prop-types": "off"
+    },
+    "settings": {
+      "react": {
+        "pragma": "React",
+        "version": "detect"
+      }
+    },
+    "overrides": [
+      {
+        "files": ["serviceWorker.js"],
+        "env": {
+          "node": true,
+          "serviceworker": true
+        }
+      }
+    ],
+    "parserOptions": {
+      "ecmaFeatures": {
+        "jsx": true
+      }
     }
   },
   "browserslist": [
