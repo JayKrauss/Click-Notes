@@ -94,7 +94,7 @@
     "max-statements-per-line": "error",
     "multiline-comment-style": ["error", "separate-lines"],
     "multiline-ternary": ["error", "always-multiline"],
-    "new-cap": "error",
+    "new-cap": "warn",
     "new-parens": "error",
     "newline-after-var": "off",
     "newline-before-return": "off",

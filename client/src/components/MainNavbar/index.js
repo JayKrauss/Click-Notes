@@ -25,6 +25,7 @@ export default class MainNavbar extends Component {
       collapsed: !this.state.collapsed
     });
   }
+
   render() {
     const { makeReport } = this.props;
     return (

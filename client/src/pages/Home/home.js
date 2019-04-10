@@ -7,7 +7,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { Header, MainNavbar, SubHeader, BehaviorList, ErrorList } from '../../components';
 
 // API utilities, helpers, and other assets.
-import { DESIRED_CANDIDATE_TRAITS, POSITIVE_BEHAVIORS, NEGATIVE_BEHAVIORS, RED_FLAGS, ERRORS } from '../../utils/constants'
+import { DESIRED_CANDIDATE_TRAITS, POSITIVE_BEHAVIORS, NEGATIVE_BEHAVIORS, RED_FLAGS, ERRORS } from '../../utils/constants';
 import './home.css';
 
 class Home extends Component {
@@ -98,7 +98,7 @@ class Home extends Component {
         }
         return error;
       });
-      this.setState(() => ({ errors: updatedErrors }))
+      this.setState(() => ({ errors: updatedErrors }));
     }
   }
 

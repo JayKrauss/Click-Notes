@@ -36,35 +36,35 @@ export default function NavItemsList(props) {
                       makeReport={makeReport}
                     />
                   ) : (
-                      <DropdownItem
-                        disabled
-                        key={item.id}
-                        tag="a"
-                        href={item.location}
-                        target="_blank"
-                        className="flex-fill text-center text-uppercase text-white-50 font-italic nav-sub-item"
-                      >
-                        {item.text}
-                      </DropdownItem>
-                    )
+                    <DropdownItem
+                      disabled
+                      key={item.id}
+                      tag="a"
+                      href={item.location}
+                      target="_blank"
+                      className="flex-fill text-center text-uppercase text-white-50 font-italic nav-sub-item"
+                    >
+                      {item.text}
+                    </DropdownItem>
+                  )
                 ))}
               </div>
             </DropdownMenu>
           </UncontrolledDropdown>
         ) : (
-            <NavItem
-              key={navItem.id}
+          <NavItem
+            key={navItem.id}
+          >
+            <NavLink
+              disabled
+              href={navItem.location}
+              className="py-1 font-italic text-uppercase"
+              target="_blank"
             >
-              <NavLink
-                disabled
-                href={navItem.location}
-                className="py-1 font-italic text-uppercase"
-                target="_blank"
-              >
-                {navItem.text}
-              </NavLink>
-            </NavItem>
-          )
+              {navItem.text}
+            </NavLink>
+          </NavItem>
+        )
       ))}
 
     </React.Fragment>

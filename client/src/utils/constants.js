@@ -3,12 +3,11 @@ const MAIN_NAV_ITEMS = [
   { id: 1, text: 'script', location: '#' },
   { id: 2, text: 'follow-up', location: '#' },
   { id: 3, text: 'more', items: [
-      { id: 4, text: 'sop', location: '#' },
-      { id: 5, text: 'checklist', location: '#' },
-      { id: 6, text: 'reschedule', location: '#' },
-      { id: 7, text: 'report', location: '#' }
-    ]
-  }
+    { id: 4, text: 'sop', location: '#' },
+    { id: 5, text: 'checklist', location: '#' },
+    { id: 6, text: 'reschedule', location: '#' },
+    { id: 7, text: 'report', location: '#' }
+  ]}
 ];
 
 const DESIRED_CANDIDATE_TRAITS = [
