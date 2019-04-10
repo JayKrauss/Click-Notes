@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "test": "echo it worked",
     "start": "node start.js",
     "lint": "eslint **/*.js --quiet",
     "lint-all": "eslint **/*.js",
