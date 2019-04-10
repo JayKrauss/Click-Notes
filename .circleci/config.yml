@@ -14,10 +14,11 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/repo/client
+    working_directory: ~/Click-Notes/client
 
     steps:
       - checkout
+        path: ~/Click-Notes
 
       # Download and cache dependencies
       - restore_cache:
