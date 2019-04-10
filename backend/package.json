@@ -11,5 +11,8 @@
     "lint-ci": "eslint '**/*.js' --quiet"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^5.16.0"
+  }
 }
