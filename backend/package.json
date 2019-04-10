@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo it worked",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node start.js",
     "lint": "eslint **/*.js --quiet",
     "lint-all": "eslint **/*.js",

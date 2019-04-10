@@ -70,7 +70,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run: yarn lint-ci
-      - run: yarn test
+      # - run: yarn test
 
 workflows:
   version: 2
