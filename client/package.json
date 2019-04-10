@@ -24,7 +24,7 @@
     "lint-ci": "eslint '**/*.js' --quiet"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": ["react-app", "plugin:react/recommended"]
   },
   "browserslist": [
     ">0.2%",
