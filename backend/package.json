@@ -10,10 +10,6 @@
     "lint-all": "eslint **/*.js",
     "lint-ci": "eslint '**/*.js' --quiet"
   },
-  "eslintConfig": {
-    "extends": "eslint:recommended",
-    "env": { "es6": true }
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
