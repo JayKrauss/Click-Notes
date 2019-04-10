@@ -24,31 +24,7 @@
     "lint-ci": "eslint '**/*.js' --quiet"
   },
   "eslintConfig": {
-    "extends": ["react-app", "plugin:react/recommended"],
-    "plugins": ["react"],
-    "rules": {
-      "react/prop-types": "off"
-    },
-    "settings": {
-      "react": {
-        "pragma": "React",
-        "version": "detect"
-      }
-    },
-    "overrides": [
-      {
-        "files": ["serviceWorker.js"],
-        "env": {
-          "node": true,
-          "serviceworker": true
-        }
-      }
-    ],
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      }
-    }
+    "extends": "react-app"
   },
   "browserslist": [
     ">0.2%",

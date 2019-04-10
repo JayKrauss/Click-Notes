@@ -1,0 +1,31 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": "plugin:react/recommended",
+  "plugins": ["react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "overrides": [
+    {
+      "files": ["serviceWorker.js"],
+      "env": {
+        "node": true,
+        "serviceworker": true
+      }
+    }
+  ],
+  "rules": {
+    "react/prop-types": "off"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}
