@@ -107,26 +107,34 @@ class Home extends Component {
     let trait;
     const observedTraits = [];
     for (let key in traits) {
-      trait = traits[key];
-      if (trait.isDone) observedTraits.push(trait);
+      if (traits.hasOwnProperty(key)) {
+        trait = traits[key];
+        if (trait.isDone) observedTraits.push(trait);
+      }
     }
 
     let error;
     const fixedErrors = [];
     for (let key in errors) {
-      error = errors[key];
-      if (error.isDone) fixedErrors.push(error);
+      if (errors.hasOwnProperty(key)) {
+        error = errors[key];
+        if (error.isDone) fixedErrors.push(error);
+      }
     }
 
     let behaviorsList;
     const observedBehaviors = [];
     for (let key in behaviors) {
-      behaviorsList = behaviors[key];
-      observedBehaviors[key] = [];
-      let behavior;
-      for (let innerKey in behaviorsList) {
-        behavior = behaviorsList[innerKey];
-        if (behavior.count >= 1) observedBehaviors[key].push(behavior);
+      if (behaviors.hasOwnProperty(key)) {
+        behaviorsList = behaviors[key];
+        observedBehaviors[key] = [];
+        let behavior;
+        for (let innerKey in behaviorsList) {
+          if (behaviorsList.hasOwnProperty(innerKey)) {
+            behavior = behaviorsList[innerKey];
+            if (behavior.count >= 1) observedBehaviors[key].push(behavior);
+          }
+        }
       }
     }
 

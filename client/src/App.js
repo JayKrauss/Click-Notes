@@ -3,22 +3,26 @@ import {
   BrowserRouter as Router,
   Route,
   Switch
-} from 'react-router-dom'
-import Home from "../src/pages/Home/home";
+} from 'react-router-dom';
+
+// Bootstrap components.
+import { Container } from 'reactstrap';
+
+// Custom components.
+import Home from '../src/pages/Home/home';
 
 class App extends Component {
-  state = {
-    
-  }
-
   render() {
     return (
       <Router>
-        <div id='display' className='container-fluid'>
+        <Container
+          fluid
+          id="display"
+          className="p-0">
           <Switch>
             <Route exact path="/" component={Home} />
           </Switch>
-        </div>
+        </Container>
       </Router>
     );
   }
