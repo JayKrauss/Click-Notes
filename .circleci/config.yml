@@ -18,7 +18,6 @@ jobs:
 
     steps:
       - checkout
-        path: ~/Click-Notes
 
       # Download and cache dependencies
       - restore_cache:
