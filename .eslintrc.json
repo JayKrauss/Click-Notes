@@ -11,7 +11,7 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  
   "overrides": [
     {
       "files": ["*.test.js", "*.spec.js"],
