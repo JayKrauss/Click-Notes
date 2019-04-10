@@ -15,6 +15,7 @@ jobs:
       # - image: circleci/mongo:3.4.4
 
     working_directory: ~/repo/client
+    working_directory: ~/repo/backend
 
     steps:
       - checkout:
